@@ -2,6 +2,7 @@
 
 /**
  * print_sign - Print the sign of the number
+ * @n: Number
  *
  * Return: 1 if number is positive, 0 if it's 0, -1 if the number is negative
  */

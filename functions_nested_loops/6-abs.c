@@ -5,6 +5,7 @@
  * @n: Number
  *
  * Return: Positive n
+ */
 int _abs(int n)
 {
 	if (n < 0)

@@ -4,7 +4,7 @@
  * _isalpha - Checks if c is a letter.
  * @c: The letter
  *
- * Return: 1 when c is a letter, 0 otherwise 
+ * Return: 1 if c is a letter, 0 otherwise
  */
 int _isalpha(int c)
 {

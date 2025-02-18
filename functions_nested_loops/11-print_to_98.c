@@ -2,6 +2,7 @@
 #include <stdio.h>
 /**
  * print_to_98 - Prints the numbers to go to 98
+ * @current_number: Number to start from
  */
 void print_to_98(int current_number)
 {

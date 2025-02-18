@@ -16,5 +16,5 @@ void print_to_98(int current_number)
 			current_number++;
 		}
 	}
-	printf("98");
+	printf("98\n");
 }

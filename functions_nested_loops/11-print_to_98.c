@@ -6,7 +6,6 @@ void print_to_98(int current_number)
 	{
 		printf("%d", current_number);
 		printf(", ");
-		
 		if (current_number > 98)
 		{
 			current_number--;

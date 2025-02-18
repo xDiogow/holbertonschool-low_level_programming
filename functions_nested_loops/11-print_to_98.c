@@ -1,5 +1,8 @@
 #include "main.h"
 #include <stdio.h>
+/**
+ * print_to_98 - Prints the numbers to go to 98
+ */
 void print_to_98(int current_number)
 {
 	while (current_number != 98)

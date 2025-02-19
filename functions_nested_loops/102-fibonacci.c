@@ -5,15 +5,32 @@
  * @n: Number to find from
  *
  * Return: suite de fibonacci
- */
+
 long int fibonacci(int n)
 {
 	if (n <= 1)
-		return n;
+		return (n);
 	else
-		return fibonacci(n - 1) + fibonacci(n - 2);
+		return (fibonacci(n - 1) + fibonacci(n - 2));
 }
+*/
 
+long int fibonacci(int n) 
+{
+	int previouspreviousNumber, previousNumber, currentNumber;
+	
+	previousNumber = 0;
+	currentNumber = 1;
+
+	int i;
+	for (i = 1; i < n; n++)
+	{
+		previouspreviousNumber = previousNumber;
+		previousNumber = currentNumber;
+		currentNumber = previouspreviousNumber + previousNumber;
+	}
+	return currentNumber;
+}
 /**
  * main - Entry Point
  * Return: Always 0 (Success)

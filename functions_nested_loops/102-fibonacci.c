@@ -23,7 +23,7 @@ int main(void)
 	int i;
 	int n = 51;
 
-	for (i = 1; i <= n; i++)
+	for (i = 2; i <= n; i++)
 	{
 		long int result = fibonacci(i);
 		if (i != n)

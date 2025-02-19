@@ -21,9 +21,9 @@ int fibonacci(int n)
 int main(void)
 {
 	int i;
-	int n = 50;
+	int n = 51;
 
-	for (i = 0; i <= n; i++)
+	for (i = 1; i <= n; i++)
 	{
 		int result = fibonacci(i);
 		if (i != n)
@@ -31,5 +31,6 @@ int main(void)
 		else
 			printf("%d", result);
 	}
+	printf("\n");
 	return (0);
 }

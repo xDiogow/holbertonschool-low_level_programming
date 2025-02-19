@@ -18,11 +18,11 @@ long int fibonacci(int n)
 long int fibonacci(int n) 
 {
 	int previouspreviousNumber, previousNumber, currentNumber;
-	
+	int i;
+
 	previousNumber = 0;
 	currentNumber = 1;
 
-	int i;
 	for (i = 1; i < n; n++)
 	{
 		previouspreviousNumber = previousNumber;

@@ -17,17 +17,17 @@ long int fibonacci(int n)
 
 long int fibonacci(int n) 
 {
-	int previouspreviousNumber, previousNumber, currentNumber;
+	long int previouspreviousNumber, previousNumber, currentNumber;
 	int i;
+	
+	previouspreviousNumber = 0;
+	previousNumber = 1;
 
-	previousNumber = 0;
-	currentNumber = 1;
-
-	for (i = 1; i < n; n++)
+	for (i = 1; i < n; i++)
 	{
+		currentNumber = previouspreviousNumber + previousNumber;
 		previouspreviousNumber = previousNumber;
 		previousNumber = currentNumber;
-		currentNumber = previouspreviousNumber + previousNumber;
 	}
 	return currentNumber;
 }

@@ -9,17 +9,16 @@
 int fibonacci(int n)
 {
 	if (n <= 1)
-		return n;
+		return (n);
 	else
-		return fibonacci(n - 1) + fibonacci(n - 2);
+		return (fibonacci(n - 1) + fibonacci(n - 2));
 }
 
 /**
  * main - Entry point
- * 
  * Return: Always 0
  */
-int main()
+int main(void)
 {
 	int max_iter = 33;
 	int sum = 0;
@@ -31,7 +30,6 @@ int main()
 		if (result % 2 == 0)
 			sum += result;
 	}
-	printf("%d", sum);
-
+	printf("%d\n", sum);
 	return (0);
 }

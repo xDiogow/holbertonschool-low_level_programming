@@ -39,19 +39,22 @@ int main(void)
 {
 	int i, j;
 
-	for (i = 0; i <= 98; i++)
+	for (i = 0; i < 100; i++)
 	{
-		for (j = i + 1; j <= 99; j++)
+		for (j = i + 1; j <= 100; j++)
 		{
-			print_int(i);
+			putchar(i / 10 + '0');
+			putchar(i % 10 + '0');
 			putchar(' ');
-			print_int(j);
-			if (i == 98 && j == 99)
-				break;
-			putchar(',');
-			putchar(' ');
+			putchar(j / 10 + '0');
+			putchar(j % 10 + '0');
+
+			if (i != 98 && j != 99)
+			{
+				putchar(',');
+				putchar(' ');
+			}
 		}
 	}
-	putchar(5 + '0');
 	return (0);
 }

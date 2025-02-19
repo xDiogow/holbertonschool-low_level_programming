@@ -6,7 +6,7 @@
  *
  * Return: suite de fibonacci
  */
-long long int fibonacci(int n)
+long int fibonacci(int n)
 {
 	if (n <= 1)
 		return n;
@@ -18,18 +18,18 @@ long long int fibonacci(int n)
  * main - Entry Point
  * Return: Always 0 (Success)
  */
-long long int main(void)
+int main(void)
 {
 	int i;
 	int n = 51;
 
 	for (i = 1; i <= n; i++)
 	{
-		long long int result = fibonacci(i);
+		long int result = fibonacci(i);
 		if (i != n)
-			printf("%lld, ", result);
+			printf("%ld, ", result);
 		else
-			printf("%lld", result);
+			printf("%ld", result);
 	}
 	printf("\n");
 	return (0);

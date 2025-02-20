@@ -39,7 +39,6 @@ int main(void)
 		b_low = temp_low;
 		b_high = temp_high;
 	}
-	
 	printf("\n");
 	return (0);
-}
+

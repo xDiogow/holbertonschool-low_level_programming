@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-#define SPLIT_LIMIT = 1000000000
+#define SPLIT_LIMIT 1000000000
 
 /**
  * main - Entry Point

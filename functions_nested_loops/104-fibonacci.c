@@ -14,9 +14,9 @@ int main(void)
 	long b_high = 0, b_low = 2;
 	long temp_high, temp_low;
 
-	printf("%d, %d", a_low, b_low);
+	printf("%ld, %ld", a_low, b_low);
 
-	for (i = 3; i < 99; count++)
+	for (i = 3; i < 99; i++)
 	{
 		temp_low = a_low + b_low;
 		temp_high = a_high + b_high;

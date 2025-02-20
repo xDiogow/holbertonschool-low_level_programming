@@ -23,7 +23,7 @@ int main(void)
 
 		if (temp_low >= SPLIT_LIMIT)
 		{
-			temp_high = temp_low / SPLIT_LIMIT;
+			temp_high += temp_low / SPLIT_LIMIT;
 			temp_low = temp_low % SPLIT_LIMIT;
 		}
 

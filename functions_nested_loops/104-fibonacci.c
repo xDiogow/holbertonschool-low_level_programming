@@ -16,7 +16,7 @@ int main(void)
 
 	printf("%ld, %ld", a_low, b_low);
 
-	for (i = 3; i < 99; i++)
+	for (i = 3; i <= 98; i++)
 	{
 		temp_low = a_low + b_low;
 		temp_high = a_high + b_high;
@@ -30,7 +30,7 @@ int main(void)
 		printf(", ");
 
 		if (temp_high > 0)
-			printf("%ld%ld", temp_high, temp_low);
+			printf("%ld%09ld", temp_high, temp_low);
 		else
 			printf("%ld", temp_low);
 

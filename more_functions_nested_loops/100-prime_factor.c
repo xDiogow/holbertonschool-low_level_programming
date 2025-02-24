@@ -7,9 +7,9 @@
  *
  * Return: Largest prime factor of the number n 
  */
-int prime_number(long int n)
+long prime_number(long n)
 {
-	int factor = 2;
+	long factor = 2;
 
 	while (n % factor == 0)
 	{
@@ -21,14 +21,16 @@ int prime_number(long int n)
 	while (factor * factor <= n)
 	{
 		while (n % factor == 0)
+		{
 			n = n / factor;
+		}
 		factor = factor + 2;
 	}
 
 	if (n > 1)
-		printf("%d", n);
+		printf("%ld", n);
 	else
-		printf("%d", factor);
+		printf("%ld", factor);
 }
 
 /**

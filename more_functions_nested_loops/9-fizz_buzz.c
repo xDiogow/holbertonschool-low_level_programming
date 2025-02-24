@@ -25,7 +25,7 @@ void fizz_buzz()
 /**
  * main - Entry point
  */
-void main()
+int main()
 {
 	fizz_buzz();
 	return (0);

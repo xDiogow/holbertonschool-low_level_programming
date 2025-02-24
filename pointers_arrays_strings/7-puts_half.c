@@ -2,6 +2,27 @@
 #include <stdio.h>
 #include <string.h>
 
+/**
+ * _strlen - Counts the amount of char
+ * @str: String
+ * Return: Length of string
+ */
+int _strlen(char *str)
+{
+	int len = 0;
+
+	while (*str != '\0')
+	{
+		str++;
+		len++;
+	}
+	return (len);
+}
+
+/**
+ * puts_half - Prints half of the string
+ * @str: String
+ * /
 void puts_half(char *str)
 {
 	int i;

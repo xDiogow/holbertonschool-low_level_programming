@@ -3,10 +3,10 @@
 #include "main.h"
 
 /**
- * _strlen - Counts the amount of char
- * @str: String
- * Return: Length of string
- */
+* _strlen - Counts the amount of char
+* @str: String
+* Return: Length of string
+*/
 int _strlen(char *str)
 {
 	int len = 0;
@@ -21,20 +21,19 @@ int _strlen(char *str)
 
 /**
  * rev_string - Reverse a string
- * @str: String
- * Return: The reversed string
+ * @str: String to be reversed
  */
 void rev_string(char *str)
 {
-	char* buffer[50];
-	int i;
-	int index = 0;
-	int s_size = _strlen(str);
+    int length = _strlen(str);
+    int i;
+    char temp;
 
-	for (i = s_size - 1; i >= 0; i--)
-	{
-		buffer[index] = str[i];
-		index++;
-	}
-	return buffer;
+    for (i = 0; i < length / 2; i++)
+    {
+        temp = str[i];
+        str[i] = str[length - 1 - i];
+        str[length - 1 - i] = temp;
+    }
 }
+

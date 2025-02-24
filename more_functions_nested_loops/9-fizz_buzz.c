@@ -1,6 +1,9 @@
 #include "main.h"
 #include <stdio.h>
 
+/**
+ * fizz_buzz - I don't have much to say
+ */
 void fizz_buzz()
 {
 	int i;
@@ -17,4 +20,13 @@ void fizz_buzz()
 			printf("%d", i);
 		printf("\n");
 	}
+}
+
+/**
+ * main - Entry point
+ */
+void main()
+{
+	fizz_buzz();
+	return (0);
 }

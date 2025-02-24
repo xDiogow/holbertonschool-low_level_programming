@@ -26,9 +26,9 @@ int prime_number(long int n)
 	}
 
 	if (n > 1)
-		return n;
+		printf("%d", n);
 	else
-		return factor;
+		printf("%d", factor);
 }
 
 /**

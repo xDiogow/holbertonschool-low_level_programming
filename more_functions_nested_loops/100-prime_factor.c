@@ -28,9 +28,9 @@ void prime_number(long n)
 	}
 
 	if (n > 1)
-		printf("%ld", n);
+		printf("%ld\n", n);
 	else
-		printf("%ld", factor);
+		printf("%ld\n", factor);
 }
 
 /**

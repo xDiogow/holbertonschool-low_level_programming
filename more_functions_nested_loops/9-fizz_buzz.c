@@ -4,7 +4,7 @@
 /**
  * fizz_buzz - I don't have much to say
  */
-void fizz_buzz()
+void fizz_buzz(void)
 {
 	int i;
 
@@ -21,6 +21,7 @@ void fizz_buzz()
 		if (i != 100)
 			printf(" ");
 	}
+	printf("\n");
 }
 
 /**

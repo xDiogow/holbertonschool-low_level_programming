@@ -4,8 +4,8 @@
 void puts_half(char *str)
 {
 	int i;
-	s_size = strlen(str);
-	n = (s_size - 1) / 2;
+	int s_size = strlen(str);
+	int n = (s_size - 1) / 2;
 
 	for (i = 0; i != s_size; i++)
 	{

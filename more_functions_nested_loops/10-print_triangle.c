@@ -11,8 +11,10 @@ void print_triangle(int size)
 	int spaces = size - 1;
 	
 	if (size <= 0)
+	{
 		_putchar('\n');
-
+		return;
+	}
 	for (i = 0; i <= size; i++)
 	{
 		for (j = 0; j <= spaces; j++)

@@ -13,6 +13,6 @@ void print_rev(char *str)
 	char* rev_s[s_size];
 
 	for (i = s_size; i > 0; i--)
-		rev_s[current_index] = str[i];
-	printf("%s", rev_s);
+		rev_s[current_index] = *str[i];
+	printf("%s", *rev_s);
 }

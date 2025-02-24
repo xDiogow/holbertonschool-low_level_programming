@@ -22,7 +22,7 @@ int _strlen(char *str)
 /**
  * puts_half - Prints half of the string
  * @str: String
- * /
+ */
 void puts_half(char *str)
 {
 	int i;

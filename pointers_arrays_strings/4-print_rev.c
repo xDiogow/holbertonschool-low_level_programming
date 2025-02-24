@@ -7,7 +7,7 @@
  * @str: String
  */
 void print_rev(char *str)
-{	
+{
 	int i;
 	int s_size = strlen(str);
 

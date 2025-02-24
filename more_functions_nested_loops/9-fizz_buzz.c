@@ -8,7 +8,7 @@ void fizz_buzz()
 {
 	int i;
 
-	for (i = 0; i <= 100; i++)
+	for (i = 1; i <= 100; i++)
 	{
 		if (i % 3 == 0 && i % 5 == 0)
 			printf("FizzBuzz");
@@ -25,8 +25,9 @@ void fizz_buzz()
 
 /**
  * main - Entry point
+ * Return: Always 0
  */
-int main()
+int main(void)
 {
 	fizz_buzz();
 	return (0);

@@ -7,7 +7,7 @@
  *
  * Return: Largest prime factor of the number n 
  */
-long prime_number(long n)
+void prime_number(long n)
 {
 	long factor = 2;
 

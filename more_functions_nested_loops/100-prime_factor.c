@@ -4,8 +4,7 @@
 /**
  * prime_number - Finds and prints the largest prime factor of the number n
  * @n: Number n
- *
- * Return: Largest prime factor of the number n 
+ * Return: Largest prime factor of the number n
  */
 void prime_number(long n)
 {

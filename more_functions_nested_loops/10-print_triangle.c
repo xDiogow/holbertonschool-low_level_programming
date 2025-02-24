@@ -8,7 +8,8 @@
 void print_triangle(int size)
 {
 	int i, j, k;
-	int spaces = size - 1;	
+	int spaces = size - 1;
+
 	if (size <= 0)
 	{
 		_putchar('\n');

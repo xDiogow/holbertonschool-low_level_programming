@@ -18,7 +18,8 @@ void fizz_buzz()
 			printf("Buzz");
 		else
 			printf("%d", i);
-		printf("\n");
+		if (i != 100)
+			printf(" ");
 	}
 }
 

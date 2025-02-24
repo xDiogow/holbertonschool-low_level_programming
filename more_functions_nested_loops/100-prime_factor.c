@@ -21,7 +21,7 @@ int prime_number(int n)
 	while (factor * factor <= n)
 	{
 		while (n % factor == 0)
-			n = n / factor
+			n = n / factor;
 		factor = factor + 2;
 	}
 

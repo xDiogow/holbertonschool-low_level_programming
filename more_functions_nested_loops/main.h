@@ -1,5 +1,4 @@
 int _putchar(char);
-void print_number(int);
 
 /* Project 1 */
 int _isupper(int);

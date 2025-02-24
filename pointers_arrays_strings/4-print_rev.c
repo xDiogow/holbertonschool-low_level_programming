@@ -8,11 +8,10 @@
  */
 void print_rev(char *str)
 {	
-	int i, current_index = 0;
+	int i;
 	int s_size = strlen(str);
-	char* rev_s[s_size];
 
-	for (i = s_size; i > 0; i--)
-		rev_s[current_index] = *str[i];
-	printf("%s", *rev_s);
+	for (i = s_size - 1; i >= 0; i--)
+		_putchar(str[i]);
+	_putchar('\n');
 }

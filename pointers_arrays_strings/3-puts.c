@@ -3,5 +3,11 @@
 
 void _puts(char *str)
 {
-	printf("%s", str[0]);
+	int i = 0;
+
+	while (*str != '\0')
+	{
+		_putchar(str[i]);
+		i++;
+	}
 }

@@ -19,7 +19,6 @@ int _strlen(char *str)
 	return (len);
 }
 
-
 /**
  * rev_string - Reverse a string
  * @str: String
@@ -27,10 +26,10 @@ int _strlen(char *str)
  */
 void rev_string(char *str)
 {
+	char* buffer[50];
 	int i;
 	int index = 0;
 	int s_size = _strlen(str);
-	char* buffer[50]
 
 	for (i = s_size - 1; i >= 0; i--)
 	{
@@ -39,4 +38,3 @@ void rev_string(char *str)
 	}
 	return buffer;
 }
-

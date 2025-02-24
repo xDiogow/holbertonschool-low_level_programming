@@ -1,6 +1,5 @@
 #include "main.h"
 #include <stdio.h>
-#include <string.h>
 
 /**
  * _strlen - Counts the amount of char
@@ -26,7 +25,7 @@ int _strlen(char *str)
 void puts_half(char *str)
 {
 	int i;
-	int s_size = strlen(str);
+	int s_size = _strlen(str);
 	int n = (s_size - 1) / 2;
 
 	for (i = 0; i != s_size; i++)

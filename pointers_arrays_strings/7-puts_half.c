@@ -26,13 +26,13 @@ void puts_half(char *str)
 {
 	int i, n;
 	int s_size = _strlen(str);
-	
+
 	if (s_size % 2 == 0)
 		n = s_size / 2;
 	else
 		n = (s_size + 1) / 2;
 
-	for (i = 0; i != s_size; i++)
+	for (i = n; i != s_size; i++)
 	{
 		if (i >= n)
 			_putchar(str[i]);

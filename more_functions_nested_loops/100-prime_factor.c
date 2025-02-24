@@ -7,7 +7,7 @@
  *
  * Return: Largest prime factor of the number n 
  */
-int prime_number(int n)
+int prime_number(long int n)
 {
 	int factor = 2;
 

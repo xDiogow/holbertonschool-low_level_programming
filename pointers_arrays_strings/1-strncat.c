@@ -14,8 +14,12 @@ char *_strncat(char *dest, char *src, int n)
 
 	while (dest[dI] != '\0')
 		dI++;
-
-	s_len = strlen(src);
+	
+	while (src[sI] != '\0')
+		sI++;
+	
+	s_len = sI;
+	sI = 0;
 	
 	if (n >= s_len)
 		n = s_len;

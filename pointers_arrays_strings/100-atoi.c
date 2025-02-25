@@ -31,7 +31,7 @@ int _atoi(char *str)
 
 			if (result > INT_MAX / 10 || (result == INT_MAX / 10 && exceed))
 			{
-				return (sign == 1) ? INT_MAX : INT_MIN;
+				return ((sign == 1) ? INT_MAX : INT_MIN);
 			}
 
 			result = result * 10 + (str[i] - '0');

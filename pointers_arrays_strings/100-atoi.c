@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdio.h>
+#include <limits.h>
 
 int _atoi(char *str)
 {
@@ -26,6 +27,6 @@ int _atoi(char *str)
 		i++;
 	}
 	if (result == 2147483648 && sign == -1)
-		return -2147483648;
+		return INT_MIN;
 	return result * sign;
 }

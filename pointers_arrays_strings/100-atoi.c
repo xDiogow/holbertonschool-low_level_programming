@@ -3,7 +3,7 @@
 
 int _atoi(char *str)
 {
-	int sign = 1, result = 0;
+	int sign = 1, result = 0, digit_found = 0;
 	int i = 0;
 	
 	if (str[i] == '-')
@@ -14,10 +14,15 @@ int _atoi(char *str)
 
 	while (str[i] != '\0')
 	{
-		if (str[i] >= '0' && str[i] <= '9')
+		if (str[i] == '-' && !digit_found)
+			sign = -sign;
+		else if (str[i] >= '0' && str[i] <= '9')
+		{
+			digit_found = 1;
 			result = result * 10 + (str[i] - '0');
-		else
-			return 0;
+		}
+		else if (digit_found)
+			break;
 		i++;
 	}
 

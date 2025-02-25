@@ -21,7 +21,7 @@ int _atoi(char *str)
 		{
 			digit_found = 1;
 			
-			if (result > INT_MAX / 10 || (result == INT_MAX / 10 && (str[i] - '0') > INT_MAX % 0))
+			if (result > INT_MAX / 10 || (result == INT_MAX / 10 && (str[i] - '0') > INT_MAX % 10))
 			{
 				return (sign == 1) ? INT_MAX : INT_MIN;
 			}

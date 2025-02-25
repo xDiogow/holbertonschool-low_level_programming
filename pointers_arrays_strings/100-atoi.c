@@ -11,7 +11,7 @@ int _atoi(char *str)
 {
 	int sign = 1, result = 0, digit_found = 0;
 	int i = 0;
-	bool exceed;
+	int exceed = 0;
 
 	if (str[i] == '-')
 	{
@@ -26,11 +26,12 @@ int _atoi(char *str)
 		else if (str[i] >= '0' && str[i] <= '9')
 		{
 			digit_found = 1;
-			exceed = str[i] - '0' > INT_MAX % 10;
+			if (str[i] - '0' > INT_MAX % 10)
+				exceed = 1;
 
-			if (result > INT_MAX / 10 || (result == INT_MAX / 10 && exceed)
+			if (result > INT_MAX / 10 || (result == INT_MAX / 10 && exceed))
 			{
-				return ((sign == 1) ? INT_MAX : INT_MIN);
+				return (sign == 1) ? INT_MAX : INT_MIN;
 			}
 
 			result = result * 10 + (str[i] - '0');

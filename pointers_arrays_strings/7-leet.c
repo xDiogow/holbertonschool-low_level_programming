@@ -20,6 +20,7 @@ char *leet(char *str)
 			if (str[i] == original[j])
 				str[i] = replace[j];
 		}
+		i++;
 	}
 	return (str);
 }

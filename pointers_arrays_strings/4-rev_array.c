@@ -1,6 +1,11 @@
 #include "main.h"
 #include <stdio.h>
 
+/**
+ * reverse_array - Reverses an array
+ * @a: Array to be reversed
+ * @n: Size of the array
+ */
 void reverse_array(int *a, int n)
 {
 	int start = 0;
@@ -14,5 +19,5 @@ void reverse_array(int *a, int n)
 		a[end] = temp;
 		start++;
 		end--;
-	}	
+	}
 }

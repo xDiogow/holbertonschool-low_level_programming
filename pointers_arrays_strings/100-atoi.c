@@ -2,11 +2,16 @@
 #include <stdio.h>
 #include <limits.h>
 
+/**
+ * _atoi - function that convert a string to an integer.
+ * @str: input
+ * Return: The integer
+ */
 int _atoi(char *str)
 {
 	int sign = 1, result = 0, digit_found = 0;
 	int i = 0;
-	
+
 	if (str[i] == '-')
 	{
 		sign = -sign;
@@ -20,10 +25,11 @@ int _atoi(char *str)
 		else if (str[i] >= '0' && str[i] <= '9')
 		{
 			digit_found = 1;
-			
-			if (result > INT_MAX / 10 || (result == INT_MAX / 10 && (str[i] - '0') > INT_MAX % 10))
+			bool exceed = str[i] - '0' > INT_MAX % 10;
+
+			if (result > INT_MAX / 10 || (result == INT_MAX / 10 && exceed)
 			{
-				return (sign == 1) ? INT_MAX : INT_MIN;
+				return ((sign == 1) ? INT_MAX : INT_MIN);
 			}
 
 			result = result * 10 + (str[i] - '0');
@@ -32,5 +38,5 @@ int _atoi(char *str)
 			break;
 		i++;
 	}
-	return result * sign;
+	return (result * sign);
 }

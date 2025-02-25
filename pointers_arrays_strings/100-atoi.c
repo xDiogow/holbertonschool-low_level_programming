@@ -5,7 +5,7 @@ int _atoi(char *str)
 {
 	int sign = 1, result = 0;
 	int i = 0;
-
+	
 	if (str[i] == '-')
 	{
 		sign = -sign;
@@ -16,6 +16,8 @@ int _atoi(char *str)
 	{
 		if (str[i] >= '0' && str[i] <= '9')
 			result = result * 10 + (str[i] - '0');
+		else
+			return 0;
 		i++;
 	}
 

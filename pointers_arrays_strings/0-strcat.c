@@ -2,6 +2,12 @@
 #include "main.h"
 #include <string.h>
 
+/**
+ * _strcat - Appends the `src` string to the `dest` string
+ * @dest: Destination string
+ * @src: Source string
+ * Return: Destination pointer
+ */
 char *_strcat(char *dest, char *src)
 {
 	int dI = 0, sI = 0;

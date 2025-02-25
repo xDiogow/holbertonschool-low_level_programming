@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include "main.h"
+#include <string.h>
+
+/**
+ * _strcat - Appends the `src` string to the `dest` string
+ * @dest: Destination string
+ * @src: Source string
+ * Return: Destination pointer
+ */
+char *_strncat(char *dest, char *src, int n)
+{
+	int dI = 0, sI = 0;
+
+	while (dest[dI] != '\0')
+		dI++;
+
+	if (n >= dI)
+		n = dI;
+
+	while (src[sI] != '\0' && n <= dI)
+	{
+		dest[dI + sI] = src[sI];
+		sI++;
+	}
+
+	return (dest);
+}

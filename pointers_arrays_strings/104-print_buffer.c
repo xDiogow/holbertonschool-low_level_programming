@@ -1,6 +1,12 @@
 #include "main.h"
 #include <stdio.h>
 #include <ctype.h>
+
+/**
+ * print_buffer - Prints a buffer
+ * @b: Buffer
+ * @size: Buffer size
+ */
 void print_buffer(char *b, int size)
 {
 	int i, j;
@@ -19,10 +25,13 @@ void print_buffer(char *b, int size)
 		{
 			if (i + j < size)
 			{
+				unsigned char first_part = b[i + j];
+				unsigned char second_part = b[i + j + 1];
+
 				if (i + j + 1 < size)
-					printf("%02x%02x ", (unsigned char) b[i + j], (unsigned char) b[i + j + 1]);
+					printf("%02x%02x ", first_part, second_part);
 				else
-					printf("%02x   ", (unsigned char) b[i + j]);
+					printf("%02x   ", first_part);
 			}
 			else
 				printf("     ");

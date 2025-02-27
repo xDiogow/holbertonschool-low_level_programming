@@ -1,3 +1,5 @@
+![image](https://github.com/user-attachments/assets/7ab29922-0716-4f3d-bba2-aa1a7ee33171)
+
 # C - Variables, if, else, while
 
 This project explores fundamental C programming concepts including variables, conditional statements (`if`/`else`), and loop structures (`while`). The exercises focus on working with random number generation, printing characters and numbers using limited functions, and understanding basic program flow control.

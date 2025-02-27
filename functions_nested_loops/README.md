@@ -1,3 +1,5 @@
+![image](https://github.com/user-attachments/assets/7ab29922-0716-4f3d-bba2-aa1a7ee33171)
+
 # Functions and Nested Loops
 
 This directory contains C programming exercises focused on functions and nested loops, implementing various functionalities like character printing, alphabet manipulation, time display, and mathematical operations.

@@ -1,3 +1,5 @@
+![image](https://github.com/user-attachments/assets/7ab29922-0716-4f3d-bba2-aa1a7ee33171)
+
 # Hello, World - C Programming
 
 This directory contains introductory exercises in C programming, focusing on basic compilation steps and standard output functions.

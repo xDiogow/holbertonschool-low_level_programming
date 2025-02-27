@@ -1,3 +1,6 @@
+![image](https://github.com/user-attachments/assets/7ab29922-0716-4f3d-bba2-aa1a7ee33171)
+
+
 # Pointers, Arrays & Strings - C Programming
 
 This directory contains exercises focused on pointers, arrays, and string manipulation in C. The tasks range from simple pointer updates and swaps to complex string operations and advanced buffer manipulations, helping you strengthen your understanding of memory and string handling in C.

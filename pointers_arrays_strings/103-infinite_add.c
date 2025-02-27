@@ -2,6 +2,14 @@
 #include <stdio.h>
 #include <string.h>
 
+/**
+ * infinite_add - Adds two numbers
+ * @n1: Number 1
+ * @n2: Number 2
+ * @r: Buffer used to store the result
+ * @size_r: Buffer size
+ * Return: Buffer
+ */
 char *infinite_add(char *n1, char *n2, char *r, int size_r)
 {
 	int i, j, k, sum, carry;

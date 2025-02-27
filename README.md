@@ -1,3 +1,5 @@
+![image](https://github.com/user-attachments/assets/7ab29922-0716-4f3d-bba2-aa1a7ee33171)
+
 # holbertonschool-low_level_programming
 
 Welcome to the **Low-Level Programming** repository! This repository contains projects completed at **Holberton School** as part of the low-level programming curriculum, primarily focused on **C programming**.  

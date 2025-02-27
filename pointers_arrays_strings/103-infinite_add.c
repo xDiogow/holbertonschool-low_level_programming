@@ -41,8 +41,7 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 		j--;
 		k--;
 	}
-	
-	memmove(r, r + k + 1, size_r - k - 1);	
+	memmove(r, r + k + 1, size_r - k - 1);
 	r[size_r - k - 1] = '\0';
 	return (r);
 }

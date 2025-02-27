@@ -18,7 +18,7 @@ void print_buffer(char *b, int size)
 		for (j = 0; j < 10; j += 2)
 		{
 			if (i + j < size)
-				printf("%02x%02x ", b[i + j], b[i + j + 1]);
+				printf("%02x%02x ", (unsigned char) b[i + j], (unsigned char) b[i + j + 1]);
 			else
 				printf("     ");
 		}

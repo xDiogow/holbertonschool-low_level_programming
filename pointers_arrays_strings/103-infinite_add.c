@@ -21,6 +21,8 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 	k = size_r - 2;
 	carry = 0;
 
+	memset(r, 0, size_r);
+
 	while (i >= 0 || j >= 0 || carry)
 	{
 		sum = carry;

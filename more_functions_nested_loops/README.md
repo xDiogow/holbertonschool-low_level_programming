@@ -1,3 +1,5 @@
+![image](https://github.com/user-attachments/assets/7ab29922-0716-4f3d-bba2-aa1a7ee33171)
+
 # More Functions & Nested Loops - C Programming
 
 This directory contains exercises focused on implementing various functions and using nested loops in C. Each task reinforces fundamental concepts such as conditionals, loops, and basic I/O while emphasizing efficient coding practices.

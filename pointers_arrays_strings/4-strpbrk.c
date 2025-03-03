@@ -6,7 +6,7 @@
  * @accept: sete of chars to match
  * Return: pointer to the byte in c that matches one of the bytes in accept
  */
-char *_strspn(char *s, char *accept)
+char *_strpbrk(char *s, char *accept)
 {
 	int i = 0, j = 0, position = 0;
 	char *p = "";

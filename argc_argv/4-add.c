@@ -2,6 +2,11 @@
 #include <stdlib.h>
 #include <ctype.h>
 
+/**
+ * is_number - Checks if s is a number
+ * @s: Buffer
+ * Return: 1 if number, 0 otherwise
+ */
 int is_number(char *s)
 {
 	while (*s)
@@ -13,6 +18,12 @@ int is_number(char *s)
 	return (1);
 }
 
+/**
+ * main - Entry point
+ * @argc: Arguments count
+ * @argv: Array of arguments
+ * Return: -1 if error, 0 otherwise
+ */
 int main(int argc, char *argv[])
 {
 	int i, sum;

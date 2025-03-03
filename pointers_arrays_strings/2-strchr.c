@@ -10,7 +10,7 @@
 char *_strchr(char *s, char c)
 {
 	int i = 0;
-	char *ptr;
+	char *ptr = null;
 	
 	while (s[i] != c)
 	{
@@ -18,4 +18,3 @@ char *_strchr(char *s, char c)
 	}
 	return (ptr);
 }
-

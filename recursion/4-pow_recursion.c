@@ -14,7 +14,7 @@ int _pow_recursion(int x, int y)
 
 	for (i = 0; i < y; i++)
 	{
-		sum *= x
+		sum *= x;
 	}
 	return (sum);
 }

@@ -16,9 +16,9 @@ int main(int argc, char *argv[])
 		return (1);
 	}
 	
-	sum = argv[0];
+	sum = argv[1];
 
-	for (i = 1; i < argc; i++)
+	for (i = 2; i < argc; i++)
 	{
 		sum *= argv[i];
 	}

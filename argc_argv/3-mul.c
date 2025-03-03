@@ -8,14 +8,14 @@
  */
 int main(int argc, char *argv[])
 {
+	int i, sum;
+
 	if (argc < 2)
 	{
 		printf("Error\n");
 		return (1);
 	}
 	
-	int i;
-
 	sum = argv[0];
 
 	for (i = 1; i < argc; i++)

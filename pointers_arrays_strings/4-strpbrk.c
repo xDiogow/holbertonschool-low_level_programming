@@ -18,7 +18,6 @@ char *_strpbrk(char *s, char *accept)
 			if (s[i] == accept[j])
 			{
 				p[position] = s[i];
-				c++;
 				position++;
 			}
 			j++;

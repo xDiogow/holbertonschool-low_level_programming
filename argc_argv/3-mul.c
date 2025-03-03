@@ -16,11 +16,11 @@ int main(int argc, char *argv[])
 		return (1);
 	}
 	
-	sum = argv[1];
+	sum = atoi(argv[1]);
 
 	for (i = 2; i < argc; i++)
 	{
-		sum *= argv[i];
+		sum *= atoi(argv[i]);
 	}
 	printf("%d", sum);
 	return (0);

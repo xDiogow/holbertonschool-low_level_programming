@@ -4,6 +4,7 @@
 /**
  * factorial - calculates the factorial of n recursively
  * @n: N
+ * Return: n * factorial(n - 1)
  */
 int factorial(int n)
 {

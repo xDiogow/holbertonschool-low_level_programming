@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _stspn - Gets the length of a prefix substring.
+ * _strspn - Gets the length of a prefix substring.
  * @s: input string
  * @accept: sete of chars to match
  * Return: length of a prefix substring
@@ -25,7 +25,7 @@ unsigned int _strspn(char *s, char *accept)
 		}
 		if (!found)
 			return (c);
-		
+
 		found = 0;
 		i++;
 		j = 0;

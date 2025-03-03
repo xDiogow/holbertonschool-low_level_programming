@@ -1,19 +1,29 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+int is_number(char *s)
+{
+	while (*s)
+	{
+		if (!isdigit(*s))
+			return (0);
+		*s++;
+	}
+	return (1);
+}
+
 int main(int argc, char *argv[])
 {
-	int i, sum, val;
+	int i, sum;
 
 	for (i = 1; i < argc; i++)
 	{
-		val = atoi(argv[i]);
-		if (val == 0)
+		if (!is_number(argv[i]))
 		{
 			printf("Error\n");
 			return (-1);
 		}
-		sum += val;
+		sum += argv[i];
 	}
 	printf("%d\n", sum);
 	return (0);

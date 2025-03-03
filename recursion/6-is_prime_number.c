@@ -11,7 +11,7 @@ int check_prime(int n, int d)
 {
 	if (d * d > n)
 		return (1);
-	if (n % i == 0)
+	if (n % d == 0)
 		return (0);
 	return (check_prime(n, d + 1));
 }

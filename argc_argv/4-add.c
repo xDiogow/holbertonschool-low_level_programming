@@ -11,7 +11,7 @@ int main(int argc, char *argv[])
 		if (val == 0)
 		{
 			printf("Error\n");
-			return;
+			return (-1);
 		}
 		sum += val;
 	}

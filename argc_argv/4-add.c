@@ -8,7 +8,7 @@ int is_number(char *s)
 	{
 		if (!isdigit(*s))
 			return (0);
-		*s++;
+		s++;
 	}
 	return (1);
 }

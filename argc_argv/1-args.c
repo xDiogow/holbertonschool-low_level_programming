@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+/**
+ * main - Prints amount of args
+ * @argc: Amount of arguments
+ * @argv: Array of arguments
+ * Return: Always 0
+ */
+int main(int argc, char *argv[])
+{
+	printf("%d\n", argc);
+	return (0);
+}

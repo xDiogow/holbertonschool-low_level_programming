@@ -9,50 +9,31 @@
  */
 int main(int argc, char *argv[])
 {
-	int total, coins;
+	int total, coins = 0;
+	int denominations[] = {25, 10, 5, 2, 1};
+	int i;
 
-	if (argc < 0)
-	{
-		printf("0\n");
-	}
-
-	if (argc != 1)
+	if (argc != 2)
 	{
 		printf("Error\n");
-		return 1;
+		return (1);
 	}
 
 	total = atoi(argv[1]);
-	coins = 0;
-
-	while (total % 25 == 0)
+	if (total < 0)
 	{
-		total -= 25;
-		coins += 1;
+		printf("0\n");
+		return (0);
 	}
 
-	while (total % 10 == 0)
+	for (i = 0; i < 5; i++)
 	{
-		total -= 10;
-		coins += 1;
-	}
-
-	while (total % 5 == 0)
-	{
-		total -= 5;
-		coins += 1;
-	}
-
-	while (total % 2 == 0)
-	{
-		total -= 2;
-		coins += 1;
-	}
-
-	while (total % 1 == 0)
-	{
-		total -= 1;
-		coins += 1;
+		while (total >= denominations[i])
+		{
+			total -= denominations[i];
+			coins++;
+		}
 	}
 	printf("%d\n", coins);
+	return (0);
 }

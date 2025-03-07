@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
  * main - Entry point
@@ -8,7 +9,7 @@
  */
 int main(int argc, char *argv[])
 {
-	int total, i, coins;
+	int total, coins;
 
 	if (argc < 0)
 	{

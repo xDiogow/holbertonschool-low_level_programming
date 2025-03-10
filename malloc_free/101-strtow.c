@@ -88,7 +88,7 @@ char **strtow(char *str)
 		{
 			while (i > 0)
 			{
-				i--
+				i--;
 				free(words[i]);
 			}
 			free(words);

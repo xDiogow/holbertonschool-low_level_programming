@@ -1,15 +1,15 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 char **strtow(char *str)
 {
 	int word_count = 0;
-	int max_len = 25;
 	int i, j, k, m;
 	char **words;
 
-	if (str == NULL || str == "")
+	if (str == NULL || strcmp(str, ""))
 		return (NULL);
 
 	for (i = 0; str[i] != '\0'; i++)

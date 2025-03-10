@@ -86,14 +86,17 @@ char **strtow(char *str)
 		words[i] = malloc(sizeof(char) * (word_len + 1));
 		if (words[i] == NULL)
 		{
-			for (j = 0; j < i; j++)
-				free(words[j]);
+			while (i > 0)
+			{
+				i--
+				free(words[i]);
+			}
 			free(words);
 			return (NULL);
 		}
 
 		for (j = 0; j < word_len; j++)
-			words[i][j] = str[j];
+			words[i][j] = word_start[j];
 		words[i][word_len] = '\0';
 		str = word_start + word_len;
 	}

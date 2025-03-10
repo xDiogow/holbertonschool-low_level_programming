@@ -2,6 +2,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+/**
+ * str_concat - Concatenate two strings
+ * @s1: String one
+ * @s2: String two
+ * Return: Ptr
+ */
 char *str_concat(char *s1, char *s2)
 {
 	int s_s1 = 0, s_s2 = 0, total_size = 0, i;

@@ -2,6 +2,11 @@
 #include <stdlib.h>
 #include <string.h>
 
+/**
+ * _strlen - Counts the number of chars
+ * @str: String to be count
+ * Return: Amount of chars
+ */
 int _strlen(char *str)
 {
 	int total = 0;
@@ -11,6 +16,12 @@ int _strlen(char *str)
 	return (total);
 }
 
+/**
+ * _strcpy - Copies a string from destination to src
+ * @destination: Destination of src
+ * @src: Source
+ * Return: ptr to destination
+ */
 char *_strcpy(char *destination, char *src)
 {
 	int i = 0;
@@ -23,6 +34,13 @@ char *_strcpy(char *destination, char *src)
 	return (destination);
 }
 
+/**
+ * new_dog - Creates a new dog
+ * @name: Dog's name
+ * @age: Dog's age
+ * @owner: Dog's owner
+ * Return: Dog
+ */
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *nDog;

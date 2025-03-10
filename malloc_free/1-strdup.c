@@ -3,6 +3,11 @@
 #include <stdlib.h>
 #include <string.h>
 
+/**
+ * _strdup - Reallocates a string
+ * @str: String to be reallocated
+ * Return: String
+ */
 char *_strdup(char *str)
 {
 	int size = 0, i;

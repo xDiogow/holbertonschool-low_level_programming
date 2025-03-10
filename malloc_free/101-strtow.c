@@ -6,7 +6,7 @@ char **strtow(char *str)
 {
 	int word_count = 0;
 	int max_len = 25;
-	int i, j, k;
+	int i, j, k, m;
 	char **words;
 
 	if (str == NULL || str == "")
@@ -42,10 +42,9 @@ char **strtow(char *str)
 			return (NULL);
 		}
 
-		int m;
 		for (m = 0; m < (j - i); m++)
 		{
-			words[k][m] = str[i + m]	
+			words[k][m] = str[i + m];
 		}
 
 		words[k][m] = '\0';

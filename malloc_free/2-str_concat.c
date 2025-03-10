@@ -7,6 +7,12 @@ char *str_concat(char *s1, char *s2)
 	int s_s1 = 0, s_s2 = 0, total_size = 0, i;
 	char *ptr;
 
+	if (s1 == NULL)
+		s1 = "";
+
+	if (s2 == NULL)
+		s2 = "";
+
 	while (s1[s_s1] != '\0')
 		s_s1++;
 

@@ -95,9 +95,9 @@ char **strtow(char *str)
 		for (j = 0; j < word_len; j++)
 			words[i][j] = str[j];
 		words[i][word_len] = '\0';
-		str = word_start word_len;
+		str = word_start + word_len;
 	}
 
 	words[word_count] = NULL;
 	return (words);
-}
+

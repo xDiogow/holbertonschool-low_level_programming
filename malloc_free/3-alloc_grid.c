@@ -2,6 +2,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+/*
+ * alloc_grid - Allocates a 2D Grid
+ * @width: Width of the grid
+ * @height: Height of the grid
+ * Return: Grid if success, NULL otherwise.
+ */
 int **alloc_grid(int width, int height)
 {
 	int **grid;
@@ -14,7 +20,7 @@ int **alloc_grid(int width, int height)
 	if (grid == NULL)
 		return (NULL);
 
-	for (i = 0; i < width; i++)
+	for (i = 0; i < height; i++)
 	{
 		grid[i] = malloc(sizeof(int) * width);
 		if (grid[i] == NULL)
@@ -22,12 +28,8 @@ int **alloc_grid(int width, int height)
 	}
 
 	for (i = 0; i < height; i++)
-	{
 		for (j = 0; j < width; j++)
-		{
 			grid[i][j] = 0;
-		}		
-	}
 
 	return (grid);
 }

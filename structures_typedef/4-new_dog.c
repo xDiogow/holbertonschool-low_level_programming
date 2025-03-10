@@ -5,7 +5,7 @@
 char *_strcpy(char *destination, char *src)
 {
 	int i = 0;
-	for (i = 0; src[i] != '\0')
+	for (i = 0; src[i] != '\0'; i++)
 	{
 		destination[i] = src[i];
 	}

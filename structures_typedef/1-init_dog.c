@@ -2,6 +2,13 @@
 #include <stdlib.h>
 #include "dog.h"
 
+/**
+ * init_dog - Initialize dog
+ * @d: Pointer to struct dog
+ * @name: Dog's Name
+ * @age: Dog's aGE
+ * @owner: Dog's owner
+ */
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
 	if (d == NULL)

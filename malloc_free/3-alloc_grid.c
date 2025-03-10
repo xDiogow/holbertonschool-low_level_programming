@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/*
+/**
  * alloc_grid - Allocates a 2D Grid
  * @width: Width of the grid
  * @height: Height of the grid

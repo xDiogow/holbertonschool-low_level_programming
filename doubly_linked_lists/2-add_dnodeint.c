@@ -7,6 +7,7 @@
  * add_dnodeint - Adds a new node at beginning of the list
  * @head: head
  * @n: n
+ * Return: new head
  */
 dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 {
@@ -19,7 +20,7 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 	new_node->n = n;
 	new_node->prev = NULL;
 	new_node->next = *head;
-	
+
 	if (*head != NULL)
 		(*head)->prev = new_node;
 	*head = new_node;

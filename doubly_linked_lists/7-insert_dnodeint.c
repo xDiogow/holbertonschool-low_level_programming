@@ -2,6 +2,12 @@
 #include <stdlib.h>
 #include <stdio.h>
 
+/**
+ * insert_dnodeint_at_index - Inserts a new node at a index
+ * @h: Head
+ * @idx: Index where to be set
+ * @n: Value of the node
+ */
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
 	dlistint_t *new_node, *temp = *h;
